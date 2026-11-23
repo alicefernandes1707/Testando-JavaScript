@@ -1,5 +1,5 @@
 //alert('Oi, arquivo separado');
-document.getElementById("texto").innerHTML="Meu primeiro programa em <b>JavaScript</b>"
+/*document.getElementById("texto").innerHTML="Meu primeiro programa em <b>JavaScript</b>"
 //...............................................................................................//
 document.getElementById("Q1").innerHTML="Estou apredendo <b>JavaScript</b>!"
 document.getElementById("Q2").innerHTML="Meu curso é no <i>SENAI</i>."
@@ -48,7 +48,7 @@ console.log("...................................");
 //...............................................................................................//
 
 let f1 = "Eu gosto de ";
-let f2 = "Hambúrguer com batata frita ";
+let f2 = "Hambúrguer e batata frita ";
 let f3 = "com Coca-cola";
 
 let resultado1 =f1.concat(f2).concat(f3);
@@ -97,3 +97,176 @@ console.log(total2);
 console.log(vf2);
 console.log(parc2);
 console.log("...................................");
+//...............................................................................................//
+function saudacao() {
+    console.log("Olá, seja bem-vindo!")
+}
+saudacao();
+//...............................................................................................//
+function saudacoes(nome) {
+    console.log("Olá, " + nome);
+}
+saudacoes("Maria");
+saudacoes("Pedro");
+saudacoes("Carlos");
+//...............................................................................................//
+function somar(n1, n2) {
+    return n1 + n2;
+}
+let resposta = soma (10, 20);
+console.log(resposta);
+//...............................................................................................//
+*/
+/*
+function verficarIdade(idade){
+    if (idade>=18){
+        return "Maior de idade";
+    }else{
+        return "Menor de idade";
+    }
+}
+console.log(verficarIdade(20));
+console.log(verficarIdade(15));
+
+function mediaTotal(num1, num2) {
+    let mediaTotal =(num1 + num2)/2
+    return mediaTotal;
+}
+console.log (mediaTotal(10,9));
+*/
+/*
+ // Primeira questão//
+
+ let nomeProduto = "Shampoo";
+ let valorProduto = 89;
+ let marca = "Kérastase";
+
+ console.log("Um " + nomeProduto + " da marca " + marca + " custa " + valorProduto + " reais");
+
+ let nomeVisitante = "Alice";
+ let destino = "Zhōngguó";
+
+ alert("Huānyíng " + nomeVisitante +" Nín yǐ dǐdá " + destino);
+*/
+
+let estudante = {
+    nome: "Carlos",
+    idade: 20,
+    curso: "Informática"
+};
+console.log(estudante);
+console.log("...................................");
+
+const carro = {
+    marca:"Toyota",
+    modelo: "Corolla",
+    acelerar (){
+        console.log("Acelerando!");
+    },
+    buzinar(){
+        console.log("Biiiiiiiii!");
+    }
+};
+carro.acelerar();
+carro.buzinar();
+console.log("...................................");
+
+let produto ={
+    name: "Celular",
+    preco: 2800.00,
+
+    exibirInfo: function(){
+        console.log("Produto: " + this.name);
+        console.log("Preço: " + this.preco);
+    }
+};
+
+produto.exibirInfo();
+console.log("...................................");
+
+let CARRO  = {
+    Marca: "Toyota",
+    Modelo: "Corolla",
+    Velocidade: 0,
+
+    Acelerar: function() {
+        this.Velocidade = this.Velocidade + 20;
+        console.log("Velocidade: " + this.Velocidade);
+    },
+    Frear: function() {
+        this.Velocidade = 0;
+        console.log("Carro parado!");
+    }
+};
+console.log("...................................");
+
+let CELULAR  = {
+    Marca: "Xiaomi",
+    Modelo: "RedMi note 14",
+    Carregamento: 20,
+
+    Ligar: function() {
+        console.log("Celular ligado!");
+    },
+    Carregar: function() {
+        this.Carregamento += 20;
+        console.log("Carregando: " + this.Carregamento + "%");
+    },
+    Desligar: function() {
+        console.log("Celular desligado!");
+    }
+};
+CELULAR.Ligar();
+CELULAR.Carregar();
+CELULAR.Desligar();
+console.log("...................................");
+
+let Ventilador  = {
+    Marca: "Mondial",
+    Velocidade: 0,
+
+    Ligar: function() {
+        this.Velocidade = 3;
+        console.log("Ventilador ligado!");
+        console.log("Velocidade: " + this.Velocidade);
+    }
+};
+Ventilador.Ligar();
+console.log("...................................");
+
+let Livro  = {
+    Título: "Dom Casmurro",
+    Páginas: 256,
+
+    exibirDados: function(){
+        console.log("Título: " + this.Título);
+        console.log("Páginas: " + this.Páginas);
+    }
+};
+Livro.exibirDados();
+console.log("...................................");
+
+let BANCO  = {
+    titular: "Carlos",
+    banco: "Banco do Brasil",
+    numeroConta: "12345-6",
+    saldo: 1000,
+    deposito: 200,
+    saque: 150,
+
+    Depositar: function() {
+        this.saldo = this.saldo + this.deposito;
+        console.log("Deposito: " + this.saldo);
+    },
+    Sacar: function() {
+        this.saldo = this.saldo - this.saque;
+        console.log("Deposito: " + this.saldo);
+    },
+    Consultar: function() {
+        console.log("Nome: " + this.titular);
+        console.log("Saldo: " + this.saldo);
+    }
+};
+BANCO.Depositar();
+BANCO.Sacar();
+BANCO.Consultar();
