@@ -270,3 +270,67 @@ let BANCO  = {
 BANCO.Depositar();
 BANCO.Sacar();
 BANCO.Consultar();
+console.log("...................................");
+
+let frutas =["Maçã", "Banana", "Uva"];
+frutas.push("Laranja")
+console.log(frutas);
+console.log("...................................");
+
+let cores = ["Vermelho","Azul", "Verde"];
+cores.push("Amarelo", "Roxo")
+console.log(cores);
+console.log("...................................");
+
+let bolo = ["chocolate", "morango", "paçoca"];
+console.log(bolo.join(" - "));
+console.log("...................................");
+
+let aluno =["Nome1", "Nome2", "Nome3"];
+console.log(aluno.join(" - "));
+console.log("...................................");
+
+let salgados =["Pastel", "Bolinha de queijo", "Cachorro-quente"];
+salgados.pop("Cachorro-quente");
+console.log(salgados);
+console.log("...................................");
+
+let comida = ["Salada", "Batata frita", "Hamburguer"];
+salgados.shift();
+console.log(comida);
+console.log("...................................");
+
+const lista1 = ["Arroz", "Feijão", "Salada"];
+const lista2 = ["Carne", "Batata frita", "Coca-cola"];
+const lista3 = ["Pavê de oreo", "Sorvete"]
+
+const superLista = lista1.concat(lista2).concat(lista3);
+console.log(superLista);
+console.log("...................................");
+
+let pizza = ["Calabreza", "Quatro-queijos", "Carne-seca", "Portuguesa"];
+pizza.splice(1,2);
+console.log(pizza);
+console.log("...................................");
+
+let sorvete = ["Azul", "Choco-menta", "Banana"];
+sorvete.sort();
+console.log(sorvete)
+console.log("...................................");
+
+let produtos = [];
+produtos.push("Água sanitaria", "Vassoura", "Bucha", "Detergente", "Palha de aço");
+let RESULTADOS = produtos.join(" - ");
+console.log(RESULTADOS);
+console.log("...................................");
+
+let mercado = ["Arroz", "feijão", "Leite"];
+mercado.push("Café", "Açúcar");
+mercado.pop();
+
+let novosProdutos = ["Macarrão", "Óleo"];
+
+let estoque = mercado.concat(novosProdutos);
+console.log(mercado);
+console.log(novosProdutos);
+console.log(estoque);
